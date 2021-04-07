@@ -1,0 +1,25 @@
+<div class="con">
+<body class="text-center">
+  <form class="form-signin" action="/register" method="POST" style="padding-top: 100px;">
+<img class="mb-4" src="/images/img1.png" alt="" width="72" height="72">
+<h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+<% if(messages.error){%>
+  <span ><%= messages.error%></span>
+  <%}%>
+
+<label for="inputText" class="sr-only">Name</label>
+<input type="text" id="inputEmail" value="<%=messages.name%>" name="name" class="form-control" placeholder="Name"  autofocus>
+<label for="inputEmail" class="sr-only">Email address</label>
+<input type="email" id="inputEmail" value="<%=messages.email%>" name="email" class="form-control" placeholder="Email address"  autofocus>
+<label for="inputPassword" class="sr-only">Password</label>
+<input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" >
+<div class="checkbox mb-3">
+  <label>
+    <input type="checkbox" value="remember-me"> Remember me
+  </label>
+</div>
+<button class="btn btn-lg btn-dark btn-block" type="submit">Register</button>
+<p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+</form>
+</body>
+</div>

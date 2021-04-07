@@ -1,0 +1,33 @@
+<div class="container" style="padding-top: 60px;">
+<table class="table">
+    <thead class="thead-light" >
+      <tr>
+        
+        <th scope="col">Patient ID</th>
+        <th scope="col">Date</th>
+        <th scope="col">Child Name</th>
+        <th scope="col">Status</th>
+        <th scope="col">Mobile no</th>
+        <th scope="col">Center</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+         <% booking.forEach((bookings)=>{%> 
+        <tr>
+        <td><%=bookings.patientId%></td>
+        <td><%=bookings.date%></td>
+        <td><%=bookings.time%></td>
+        <td><%=bookings.status%></td>
+        <td><%=bookings.mobile%></td>
+        <td><%=bookings.doctor%></td>
+        </tr>
+        <%})%>
+      
+     
+
+    </tbody>
+  </table>
+  
+
+</div>
